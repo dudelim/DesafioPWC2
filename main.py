@@ -15,4 +15,8 @@ def str_endereco(endereco):
 
     return nome_rua.strip(), numero_rua.strip()
 
+testes = ["Rio Branco 23", "Quirino dos Santos 23b"]
 
+for teste in testes:
+    rua, numero = str_endereco(teste)
+    print(f"'{teste}' = '{rua}', '{numero}'")
